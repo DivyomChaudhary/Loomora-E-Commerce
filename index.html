@@ -80,11 +80,11 @@
         </div>
       </div>
     </nav>
-<section id="intro-carousel d-flex" data-bs-theme="light">
+<section id="intro-carousel" data-bs-theme="light">
   <div class="row col-lg-12 fw-bold p-4 justify-content-center font-ds" style="font-size: 2.875rem;">
     Trending this week
   </div>
-  <div class="row">
+  <div class="row mb-5">
     <div
       id="carouselInterval"
       class="carousel slide shadow justify-content-center"
@@ -119,11 +119,10 @@
   </div>
 </div>
 </section>
-    <br>
-    <div class="container px-4 py-5" id="custom-cards">
+    <div class="container px-4 py-5 mt-5 mb-5" id="custom-cards">
       <h2 class="pb-2 border-bottom fst-italic font-ds">Top selling categories</h2>
       <br>
-      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 pb-5 border-bottom">
         <div class="col">
           <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg card-smooth" style="background-image: url('./Images/category/blankets.jpg');" onmouseover="this.style.transform='scale(1.05)';" onmouseout="this.style.transform='scale(1)';">
             <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
@@ -151,7 +150,9 @@
           </div>
         </div>
       </div>
-      <div class="b-example-divider"></div>
+      <div class="line mb-5 opacity-100">
+        <hr style="display: none;">
+      </div>
       </div>
     </div>
     <div class="d-flex w-100 vh-100 text-bg-dark position-relative shadow cover-it">
@@ -170,9 +171,10 @@
       </div>
       </div>
     </div>
-    <h3 style="margin-top: 7rem; margin-bottom: 5rem;" class="fs-2 text-center font-ds">
-      Our Customers Love Us!
-    </h3>
+    <div class="container px-4 py-5 mt-5 mb-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom fst-italic font-ds">Our Customers Love Us!</h2>
+      <br>
+      <div class="row pb-5">
     <div class="testimonial-carousel">
       <div class="testimonial-track" id="testimonialTrack">
           <div class="testimonial">
@@ -189,6 +191,7 @@
           </div>
       </div>
   </div>
+</div>
   <!-- TODO: Add cover for doctor towels here instead -->
   <div class="masonry-container" style="margin: 140px 30px 50px 30px; column-width: 400px;">
       <img src="./Images/masonry/image-1.jpg" alt="Image 1" height="600px" width="700px" style="border-radius: 30px; margin-right: 10px;width: 100%;" class="mb-2"/>

@@ -25,43 +25,85 @@
   </head>
   <body>
     <div
-      class="d-flex w-100 vh-100 text-bg-dark position-relative shadow cover-it"
+      class="d-flex w-100 vh-100 text-bg-dark position-relative shadow cover-it mb-5 pb-5 border-bottom"
     >
       <div
         class="cover-container position-absolute top-0 left-0 start-0 w-100 h-100"
         style="
-          background-image: url('./Images/masonry/image-1.jpg');
+          background-image: url('./Images/masonry/image-2.jpg');
           background-size: cover;
           background-position: center;
         "
       >
-      <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand font-ds" href="#">Loomora</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container">
+          <a class="navbar-brand fs-3 font-ds" href="#">
+        Loomora
+      </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Instagram</a>
+              </li>
               <li class="nav-item dropdown">
-                <!-- TODO: Make the dropdown working again -->
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="true">
                   Categories
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Bedding</a></li>
+                  <li><a class="dropdown-item" href="#">Comforters</a></li>
+          <li><a class="dropdown-item" href="#">Cushions</a></li>
+  
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Essentials</a>
+                  </li>
                 </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-
-        <div class="px-3 mt-5 pt-5 mb-5"></div>
       </div>
     </div>
+    <div class="px-4 py-5 mt-5 mb-5" id="custom-cards">
+      <h2 class="pb-2 border-bottom fst-italic font-ds">Textured Blankets</h2>
+      <h6>Shop from our wide range of Textured Blankets</h6>
+
+      <div class="masonry-container" style="margin: 140px 30px 50px 30px; column-width: 400px;">
+        <img src="./Images/masonry/image-1.jpg" alt="Image 1" height="600px" width="700px" style="border-radius: 30px; margin-right: 10px;width: 100%;" class="mb-2"/>
+        <img src="./Images/masonry/image-2.jpg" alt="Image 2" height="500px" width="600px" style="border-radius: 30px; margin-right: 10px;width: 100%;" class="mb-2"/>
+        <img src="./Images/masonry/image-3.jpg" alt="Image 3" height="500px" width="700px" style="border-radius: 30px; margin-right: 10px;width: 100%;" class="mb-2"/>
+        <img src="./Images/masonry/image-4.jpg" alt="Image 4" height="500px" width="700px" style="border-radius: 30px; margin-right: 10px;width: 100%;" class="mb-2"/>
+        <img src="./Images/masonry/image-5.jpg" alt="Image 5" height="500px" width="600px" style="border-radius: 30px; margin-right: 10px;width: 100%;" class="mb-2"/>
+        <img src="./Images/masonry/image-6.jpg" alt="Image 6" height="600px" width="700px" style="border-radius: 30px; margin-right: 10px;width: 100%;" class="mb-2"/>
+      </div>
+    </div>
+<!-- TODO: Add the hover animation on products for buy now like in portfolio -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
