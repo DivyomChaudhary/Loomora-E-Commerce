@@ -29,27 +29,27 @@ body{
     }
 
     .testimonial-carousel {
-            width: 80%;
-            margin: 20px auto;
-            overflow: hidden;
-            position: relative;
-            border-radius: 10px;
-        }
+        width: 80%;
+        margin: 20px auto;
+        overflow: hidden;
+        position: relative;
+        border-radius: 10px;
+    }
 
-        .testimonial-track {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-        }
+    .testimonial-track {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
 
-        .testimonial {
-            flex-shrink: 0;
-            width: 100%;
-            padding: 20px;
-            box-sizing: border-box;
-            text-align: center;
-            background-color: #000000;
-            color: white;
-        }
+    .testimonial {
+        flex-shrink: 0;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        background-color: #000000;
+        color: white;
+    }
 
         .testimonial-track {
             touch-action: pan-y;
@@ -58,3 +58,53 @@ body{
         hr{
             border: 0.5px solid lightgray;
         }
+
+    .masonry-box{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+        
+            /* @include media-breakpoint-down(md){
+                height: 15rem;
+            } */
+        
+            .masonry-info{
+                background-color: rgba(gray, 0.55);
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0%;
+                left: 0;
+                opacity: 0;
+                visibility: hidden;
+        
+                .caption{
+                    text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+                    
+                    h4{
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            &:hover{
+                img{
+                    transform: scale(1.3);
+                transition-duration: 1000ms;
+                transition-property: all;
+                }
+        
+                .masonry-info{
+                    opacity: 1;
+                    visibility: visible;
+                transition-duration: 1000ms;
+                transition-property: all;
+                }
+            }
+    }
