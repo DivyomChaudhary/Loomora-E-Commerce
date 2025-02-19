@@ -82,14 +82,16 @@ body{
                 visibility: hidden;
         
                 .caption{
-                    text-align: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+                    display: flex;
+                position: relative;
+                top: 90%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                     
-                    h4{
-                        text-transform: uppercase;
+                    .btn-flexy{
+                        margin: 0 auto;
+                        width: 90%;
+                        max-width: 90%;
                     }
                 }
             }
